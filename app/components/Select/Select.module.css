@@ -1,0 +1,88 @@
+.inputBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+}
+
+.inputBox input{
+    width: 100%;
+    font-size: 24px;
+    height: 45px;
+    padding: 10px ;
+}
+
+.inputBox > button{
+    width: 42px;
+    height: 42px;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    margin-left: 2px;
+    flex-shrink: 0;
+}
+
+.inputBox .downArrow {
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    border: 1px solid #000;
+    border-width: 0 2px 2px 0;
+    padding: 3px;
+    transform: rotate(45deg);
+}
+
+.inputBox .upArrow {
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    border: 1px solid #000;
+    border-width: 0 2px 2px 0;
+    padding: 3px;
+    transform: rotate(225deg);
+}
+
+.inputBox .selectedContainer {
+    display: flex;
+    flex-direction: row;
+    margin-right: 2px;
+    flex-shrink: 0;
+}
+
+.inputBox .selectedContainer div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #f2f2f2;
+    height: 25px;
+    margin-left: 5px;
+}
+
+.inputBox .selectedContainer span {
+    font-size: 10px;
+}
+
+.close {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    position: relative
+}
+
+.close::before, .close::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 16px;
+    background-color: #000;
+    left: 6px;
+}
+
+.close::before {
+    transform: rotate(45deg);
+}
+
+.close::after {
+    transform: rotate(-45deg);
+}
